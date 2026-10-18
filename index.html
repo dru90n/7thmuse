@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seventh Muse - Professional Karaoke Hostess Agency</title>
+    <title>Seventh Muse - Recruitment Professional Karaoke Hostess</title>
     <style>
         * {
             margin: 0;
@@ -204,42 +204,8 @@
             font-size: 1rem;
         }
 
-        /* Features */
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 4rem 0;
-        }
-
-        .feature-card {
-            background: rgba(138, 43, 226, 0.05);
-            border: 1px solid #8a2be2;
-            padding: 2rem;
-            border-radius: 15px;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .feature-card:hover {
-            background: rgba(138, 43, 226, 0.15);
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(138, 43, 226, 0.4);
-        }
-
-        .feature-card h3 {
-            color: #c77dff;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .feature-card p {
-            color: #e0aaff;
-            line-height: 1.6;
-        }
-
-        /* Values Section */
-        .values {
+        /* Benefits Section */
+        .benefits {
             background: rgba(138, 43, 226, 0.05);
             border: 1px solid #8a2be2;
             border-radius: 15px;
@@ -248,30 +214,139 @@
             text-align: center;
         }
 
-        .values h2 {
+        .benefits h2 {
             color: #c77dff;
             font-size: 2rem;
             margin-bottom: 2rem;
         }
 
-        .values-grid {
+        .benefits-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
 
-        .value-item {
+        .benefit-item {
             padding: 1.5rem;
+            background: rgba(138, 43, 226, 0.1);
+            border-radius: 10px;
+            transition: all 0.3s ease;
         }
 
-        .value-item h4 {
+        .benefit-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(138, 43, 226, 0.3);
+        }
+
+        .benefit-item h4 {
             color: #9d4edd;
             margin-bottom: 0.5rem;
             font-size: 1.2rem;
         }
 
-        .value-item p {
+        .benefit-item p {
+            color: #e0aaff;
+            line-height: 1.6;
+        }
+
+        /* Requirements */
+        .requirements {
+            margin: 4rem 0;
+        }
+
+        .requirements h2 {
+            text-align: center;
+            color: #c77dff;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .req-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .req-item {
+            background: rgba(138, 43, 226, 0.1);
+            border: 1px solid #8a2be2;
+            padding: 1.5rem;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .req-item:hover {
+            background: rgba(138, 43, 226, 0.2);
+            transform: translateX(10px);
+        }
+
+        .req-icon {
+            font-size: 2rem;
+            color: #c77dff;
+        }
+
+        .req-text {
+            color: #e0aaff;
+            font-size: 1.1rem;
+        }
+
+        /* Process */
+        .process {
+            margin: 4rem 0;
+        }
+
+        .process h2 {
+            text-align: center;
+            color: #c77dff;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .process-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            background: rgba(138, 43, 226, 0.1);
+            border: 1px solid #8a2be2;
+            padding: 2rem;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .step:hover {
+            background: rgba(138, 43, 226, 0.2);
+            transform: scale(1.02);
+        }
+
+        .step-number {
+            font-size: 3rem;
+            color: #c77dff;
+            font-weight: bold;
+            min-width: 80px;
+            text-align: center;
+        }
+
+        .step-content h4 {
+            color: #9d4edd;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-content p {
             color: #e0aaff;
             line-height: 1.6;
         }
@@ -385,6 +460,11 @@
                 padding: 1.2rem 2rem;
                 font-size: 1.1rem;
             }
+
+            .step {
+                flex-direction: column;
+                text-align: center;
+            }
         }
 
         /* Scroll Animation */
@@ -409,29 +489,30 @@
 
     <header>
         <h1 class="neon-text">SEVENTH MUSE</h1>
-        <p class="tagline">PROFESSIONAL KARAOKE HOSTESS AGENCY</p>
-        <p class="subtitle">✨ Penyedia Tenaga Profesional Pemandu Lagu Sejak 2013 ✨</p>
+        <p class="tagline">RECRUITMENT PROFESSIONAL KARAOKE HOSTESS</p>
+        <p class="subtitle">✨ OPEN RECRUITMENT: JOIN OUR PROFESSIONAL TEAM ✨</p>
     </header>
 
     <div class="container">
         <section class="hero fade-in">
-            <h2 class="neon-text">YOUR NIGHT, ELEVATED.</h2>
+            <h2 class="neon-text">BE PART OF OUR TEAM!</h2>
             <p>
-                <strong>Seventh Muse</strong> adalah agency profesional yang menyediakan tenaga pemandu lagu (hostess karaoke) 
-                berpengalaman untuk menemani momen karaoke kamu jadi lebih hidup dan berkesan. 
-                Tim kami terdiri dari perempuan profesional yang terlatih dalam hospitality, komunikasi, 
-                dan entertainment — siap bikin suasana karaoke kamu jadi lebih seru, elegan, dan memorable.
+                <strong>Seventh Muse</strong> adalah perusahaan recruitment profesional yang menyediakan talent 
+                pemandu lagu (karaoke hostess) berkualitas tinggi untuk berbagai venue hiburan. 
+                Kami sedang membuka kesempatan karir untuk kamu yang ingin bergabung sebagai 
+                <strong>Professional Karaoke Hostess</strong>!
             </p>
             <p>
-                Berdiri sejak <strong>2013</strong>, kami sudah dipercaya oleh ribuan klien untuk berbagai kebutuhan: 
-                karaoke keluarga, gathering kantor, ulang tahun, hingga event corporate. 
-                Semua hostess kami diseleksi ketat, terlatih, dan mengutamakan profesionalisme. 💜
+                Berdiri sejak <strong>2013</strong>, kami sudah merekrut dan mengembangkan ribuan talent 
+                profesional di bidang hospitality dan entertainment. Bergabunglah dengan kami dan 
+                dapatkan penghasilan menarik, training profesional, dan lingkungan kerja yang aman 
+                serta mendukung karir kamu! 💜
             </p>
             <div>
-                <span class="badge">✓ PROFESIONAL</span>
-                <span class="badge">✓ TERLATIH</span>
-                <span class="badge">✓ BERETIKA</span>
-                <span class="badge">✓ TERPERCAYA</span>
+                <span class="badge">💰 PENGHASILAN MENARIK</span>
+                <span class="badge">🎓 TRAINING PROFESIONAL</span>
+                <span class="badge">🛡️ LINGKUNGAN AMAN</span>
+                <span class="badge">📈 KARIR JELAS</span>
             </div>
         </section>
 
@@ -441,92 +522,148 @@
                 <div class="stat-label">TAHUN BERDIRI</div>
             </div>
             <div class="stat-box">
+                <div class="stat-number">5000+</div>
+                <div class="stat-label">TALENT TERGABUNG</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">VENUE PARTNER</div>
+            </div>
+            <div class="stat-box">
                 <div class="stat-number">13+</div>
                 <div class="stat-label">TAHUN PENGALAMAN</div>
             </div>
-            <div class="stat-box">
-                <div class="stat-number">10K+</div>
-                <div class="stat-label">KLIEN TERLAYANI</div>
-            </div>
-            <div class="stat-box">
-                <div class="stat-number">100%</div>
-                <div class="stat-label">PROFESIONAL</div>
-            </div>
         </section>
 
-        <section class="values fade-in">
-            <h2 class="neon-text">KENAPA SEVENTH MUSE?</h2>
+        <section class="benefits fade-in">
+            <h2 class="neon-text">KENAPA GABUNG SEVENTH MUSE?</h2>
             <p style="color: #e0aaff; max-width: 700px; margin: 0 auto;">
-                Kami bukan sekadar agency — kami partner hiburan profesional yang mengutamakan kualitas, 
-                etika, dan kepuasan klien. Setiap hostess kami adalah tenaga terampil yang siap menemani 
-                momen karaoke kamu dengan penuh profesionalisme.
+                Kami bukan sekadar agency recruitment — kami partner karir yang mendukung pertumbuhan 
+                profesional kamu. Bergabung dengan Seventh Muse berarti kamu mendapatkan lebih dari sekadar pekerjaan.
             </p>
-            <div class="values-grid">
-                <div class="value-item">
-                    <h4>🎤 Terlatih & Profesional</h4>
-                    <p>Semua hostess melalui training hospitality, komunikasi, dan entertainment sebelum bertugas.</p>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <h4>💰 Penghasilan Kompetitif</h4>
+                    <p>Sistem bagi hasil yang transparan dan menguntungkan. Potensi penghasilan besar dengan jadwal fleksibel.</p>
                 </div>
-                <div class="value-item">
-                    <h4>🛡️ Seleksi Ketat</h4>
-                    <p>Proses rekrutmen ketat untuk memastikan kualitas dan integritas setiap tenaga kami.</p>
+                <div class="benefit-item">
+                    <h4>🎓 Training Profesional</h4>
+                    <p>Dapatkan training hospitality, komunikasi, dan entertainment dari expert kami. Skill yang bisa kamu gunakan seumur hidup!</p>
                 </div>
-                <div class="value-item">
-                    <h4>✨ Beretika & Sopan</h4>
-                    <p>Kami menjunjung tinggi nilai profesionalisme, kesopanan, dan batasan yang jelas.</p>
+                <div class="benefit-item">
+                    <h4>🛡️ Lingkungan Kerja Aman</h4>
+                    <p>Kami menjunjung tinggi keselamatan dan kenyamanan talent. SOP ketat dan support system 24/7.</p>
                 </div>
-                <div class="value-item">
-                    <h4>🎯 Terpercaya</h4>
-                    <p>13+ tahun melayani ribuan klien dengan reputasi yang terjaga dan terpercaya.</p>
+                <div class="benefit-item">
+                    <h4>📅 Jadwal Fleksibel</h4>
+                    <p>Kamu yang atur jadwal kerjamu. Cocok untuk yang ingin work-life balance atau punya aktivitas lain.</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>🌟 Karir Jelas</h4>
+                    <p>Opportunity untuk berkembang jadi senior hostess, trainer, atau bahkan manajemen. Jenjang karir terbuka lebar!</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>🤝 Komunitas Supportif</h4>
+                    <p>Bergabung dengan komunitas talent profesional yang saling mendukung. Networking dan friendship yang berharga!</p>
                 </div>
             </div>
         </section>
 
-        <section class="features fade-in">
-            <div class="feature-card">
-                <h3>🎤 Pemandu Lagu Profesional</h3>
-                <p>Hostess terlatih yang siap menemani kamu bernyanyi, memilih lagu, dan menciptakan suasana karaoke yang seru dan menyenangkan.</p>
+        <section class="requirements fade-in">
+            <h2 class="neon-text">PERSYARATAN</h2>
+            <div class="req-list">
+                <div class="req-item">
+                    <div class="req-icon">👩</div>
+                    <div class="req-text">Wanita, usia 18-35 tahun</div>
+                </div>
+                <div class="req-item">
+                    <div class="req-icon">📏</div>
+                    <div class="req-text">Tinggi badan minimal 158 cm</div>
+                </div>
+                <div class="req-item">
+                    <div class="req-icon">✨</div>
+                    <div class="req-text">Penampilan menarik dan rapi</div>
+                </div>
+                <div class="req-item">
+                    <div class="req-icon">💬</div>
+                    <div class="req-text">Komunikatif dan ramah</div>
+                </div>
+                <div class="req-item">
+                    <div class="req-icon">🎤</div>
+                    <div class="req-text">Suka bernyanyi (nilai plus)</div>
+                </div>
+                <div class="req-item">
+                    <div class="req-icon">🎓</div>
+                    <div class="req-text">Pendidikan minimal SMA/sederajat</div>
+                </div>
+                <div class="req-item">
+                    <div class="req-icon">💼</div>
+                    <div class="req-text">Berpengalaman di hospitality (nilai plus)</div>
+                </div>
+                <div class="req-item">
+                    <div class="req-icon">🕐</div>
+                    <div class="req-text">Siap bekerja shift malam</div>
+                </div>
             </div>
-            <div class="feature-card">
-                <h3>🎉 Event & Gathering</h3>
-                <p>Layanan hostess untuk gathering kantor, ulang tahun, reunion, atau acara spesial lainnya. Bikin momen kamu lebih berkesan!</p>
-            </div>
-            <div class="feature-card">
-                <h3>👨‍👩‍👧 Karaoke Keluarga</h3>
-                <p>Hostess profesional yang ramah dan sopan, cocok untuk menemani karaoke bersama keluarga dalam suasana yang nyaman.</p>
-            </div>
-            <div class="feature-card">
-                <h3>💼 Corporate Entertainment</h3>
-                <p>Solusi hiburan profesional untuk menjamu klien, acara perusahaan, atau business dinner dengan sentuhan karaoke elegan.</p>
-            </div>
-            <div class="feature-card">
-                <h3>🎵 Hospitality & Service</h3>
-                <p>Layanan menuangkan minuman, menemani mengobrol, dan menjaga suasana tetap hidup sepanjang sesi karaoke.</p>
-            </div>
-            <div class="feature-card">
-                <h3>📞 Konsultasi & Booking</h3>
-                <p>Tim kami siap membantu kamu memilih hostess yang sesuai dengan kebutuhan acara. Fleksibel, responsif, dan profesional.</p>
+        </section>
+
+        <section class="process fade-in">
+            <h2 class="neon-text">PROSES RECRUITMENT</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h4>Registrasi Online</h4>
+                        <p>Hubungi kami via WhatsApp, kirim data diri dan foto terbaru. Tim kami akan review aplikasi kamu.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h4>Interview & Screening</h4>
+                        <p>Interview online atau offline untuk menilai komunikasi, personality, dan kesesuaian dengan standar kami.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h4>Training Profesional</h4>
+                        <p>Ikuti training intensif tentang hospitality, komunikasi, entertainment, dan SOP kerja. GRATIS!</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h4>Placement & Mulai Kerja</h4>
+                        <p>Setelah lulus training, kamu akan di-place di venue partner kami sesuai preferensi dan ketersediaan.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="cta-section fade-in">
-            <h2 class="neon-text" style="margin-bottom: 2rem;">BOOKING SEKARANG!</h2>
+            <h2 class="neon-text" style="margin-bottom: 2rem;">READY TO START YOUR CAREER?</h2>
             <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #e0aaff;">
-                Mau bikin karaoke night kamu jadi lebih epic? Chat tim kami sekarang untuk konsultasi dan booking hostess profesional! 💜
+                Jangan lewatkan kesempatan ini! Bergabunglah dengan Seventh Muse dan mulai karir profesional kamu sekarang. 
+                Tim recruitment kami siap membantu kamu 24/7! 💜
             </p>
-            <a href="https://wa.me/6283161621138?text=Halo%20Seventh%20Muse!%20Saya%20mau%20booking%20hostess%20pemandu%20lagu%20profesional." 
+            <a href="https://wa.me/6283161621138?text=Halo%20Seventh%20Muse!%20Saya%20tertarik%20untuk%20bergabung%20sebagai%20Professional%20Karaoke%20Hostess.%20Mohon%20info%20lebih%20lanjut%20tentang%20recruitment." 
                class="cta-button" 
                target="_blank">
-                <span>💬 CHAT WHATSAPP SEKARANG</span>
+                <span>💬 DAFTAR SEKARANG VIA WHATSAPP</span>
             </a>
             <p style="margin-top: 1.5rem; color: #c77dff; font-size: 0.95rem;">
                 📱 0831-6162-1138 | Fast Response 24/7
+            </p>
+            <p style="margin-top: 1rem; color: #e0aaff; font-size: 0.9rem;">
+                ✨ Kuota terbatas! Daftar sekarang sebelum ditutup ✨
             </p>
         </section>
     </div>
 
     <footer>
-        <p>© 2013-2026 SEVENTH MUSE | PROFESSIONAL KARAOKE HOSTESS AGENCY</p>
-        <p style="margin-top: 1rem; font-size: 0.9rem;">Made with 💜 for professional entertainment</p>
+        <p>© 2013-2026 SEVENTH MUSE | PROFESSIONAL RECRUITMENT AGENCY</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">Empowering Professional Careers in Entertainment</p>
         <p style="margin-top: 0.5rem; font-size: 0.8rem; color: #9d4edd;">Professional • Ethical • Trusted</p>
     </footer>
 
@@ -586,8 +723,8 @@
 
         // Console Easter Egg
         console.log('%c🎤 SEVENTH MUSE 🎤', 'color: #8a2be2; font-size: 30px; font-weight: bold;');
-        console.log('%cProfessional Karaoke Hostess Agency - Since 2013', 'color: #c77dff; font-size: 16px;');
-        console.log('%cHubungi kami: 083161621138', 'color: #9d4edd; font-size: 14px;');
+        console.log('%cProfessional Recruitment Agency - Since 2013', 'color: #c77dff; font-size: 16px;');
+        console.log('%cJoin our team: 083161621138', 'color: #9d4edd; font-size: 14px;');
     </script>
 </body>
 </html>
